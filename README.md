@@ -9,12 +9,9 @@ This program scrapes the UEA vacancies webpage using BeuatifulSoup4 and returns 
 
 Set up required:
  
-  1. Download main.py and install the following 3rd party modules:
-    a. BeautifulSoup4
-    b. pandas
-    c. pretty_html_table
+  1. Download main.py and install the necessary modules.
     
-  2. Input email credentials into rows 49 - 53
+  2. Input email credentials into rows 49 - 53.
   
   3. Edit vacancies variable to return only wanted information.
   
