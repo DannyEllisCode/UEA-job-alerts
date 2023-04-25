@@ -37,7 +37,7 @@ The motivation for this program was because at the time of creation the built-in
 
 I felt this would be a good first project to use some of the things I have learned in pandas and BeautifulSoup and to learn how Github works (although Git was not used locally).
 
-I hold no affiliation with the UEA and am happy to remove this repository upon request as this is only for personal and to display as part of a working portfolio.
+I hold no affiliation with the UEA and am happy to remove this repository upon request as this is only for personal use and to display as part of a working portfolio.
 
 ---
 
