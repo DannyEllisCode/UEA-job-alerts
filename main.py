@@ -1,4 +1,4 @@
-import sys
+cimport sys
 import requests
 from bs4 import BeautifulSoup      # library to parse HTML
 import pandas as pd                # library for data analysis
@@ -38,9 +38,9 @@ df["Job Title"] = df["Job Title"].replace("[(A-Z0-9)]+$", "", regex=True)
 # Convert "Category" and "Location" column's data to strings
 df = df.astype({"Category": "string", "Location": "string"})
 
-# Remove all rows except from those in "Category: Technical (TC)" or those in "Location: IT & Computer Science (ITCS)"
+# Remove all rows except from those in "Category: Technical (TC)" or those in "Location: IT & Computer Service (ITCS)"
 # Location is currently using "STS - Student Services" for testing. Will change to ITCS when a job appears.
-vacancies = df[(df["Category"] == "Technical (TC)") | (df["Location"] == "STS - Student Services")]
+vacancies = df[(df["Category"] == "Technical (TC)") | (df["Location"] == "IT & Computer Service (ITCS)")]
 
 # Converts "Vacancies" dataframe to HTML and makes it pretty
 output = build_table(vacancies, color="blue_light", text_align="center", padding="10px")
